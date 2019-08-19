@@ -1020,6 +1020,8 @@ function show_classification_results(region) {
             break;
         }
     }
+    console.log("\"" + region.id + "\"" + "," + region.category.code.toString() + "," +
+        region.sub_category.code.toString() + "," + region.gender.code.toString());
     show_info(document.getElementById("classification_cate"), cate_labels);
     show_info(document.getElementById("classification_sub_cate"), sub_cate_labels);
 
